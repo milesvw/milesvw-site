@@ -1,14 +1,18 @@
 body {
     font-family: 'Montserrat', sans-serif;
-    display: flex;
+    display: grid;
     justify-content: center;
     /* background-image: url("neon-city.gif"); */
 }
 
-.heading {
-
-}
-
 .title {
     font-size: 4em;
+}
+
+p {
+    position: absolute;
+    bottom: 1.5em;
+    width: 100%;
+    text-align: center;
+    font-size: 1.2em;
 }
