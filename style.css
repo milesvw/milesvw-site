@@ -1,5 +1,7 @@
 body {
     font-family: 'Montserrat', sans-serif;
+    background: black;
+    color: white;
     display: grid;
     justify-content: center;
     /* background-image: url("neon-city.gif"); */
@@ -7,6 +9,9 @@ body {
 
 .title {
     font-size: 4em;
+    background: -webkit-linear-gradient(45deg, lime, yellow);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 p {
@@ -15,4 +20,12 @@ p {
     width: 100%;
     text-align: center;
     font-size: 1.2em;
+}
+
+a {
+    color: lime;
+}
+
+a:hover {
+    color: yellow;
 }
