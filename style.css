@@ -2,9 +2,7 @@ body {
     font-family: 'Montserrat', sans-serif;
     background: black;
     color: white;
-    display: grid;
-    justify-content: center;
-    /* background-image: url("neon-city.gif"); */
+    margin: 0;
 }
 
 .title {
@@ -15,17 +13,27 @@ body {
 }
 
 p {
-    position: absolute;
-    bottom: 1.5em;
-    width: 100%;
     text-align: center;
     font-size: 1.2em;
 }
 
-a {
-    color: lime;
+.navbar {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(90deg, lime, yellow);
+    color: black;
+    border-radius: 1em;
+    display: flex;
+    justify-content: center;
 }
 
-a:hover {
-    color: yellow;
+li {
+    margin: 0.5em 2vw;
+    padding: 0.5em;
+}
+
+a {
+    text-decoration: none;
+    color: black;
 }
