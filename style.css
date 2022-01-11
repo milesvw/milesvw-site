@@ -7,6 +7,7 @@ body {
 
 .title {
     font-size: 4em;
+    text-align: center;
     background: -webkit-linear-gradient(45deg, lime, yellow);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -22,18 +23,22 @@ p {
     margin: 0;
     padding: 0;
     background: linear-gradient(90deg, lime, yellow);
-    color: black;
-    border-radius: 1em;
     display: flex;
     justify-content: center;
 }
 
-li {
-    margin: 0.5em 2vw;
-    padding: 0.5em;
-}
-
-a {
+.nav-item {
     text-decoration: none;
     color: black;
+}
+
+li {
+    margin: 0.5em 2vw;
+    padding: 0.2em;
+    font-size: 1.4em;
+}
+
+.contact {
+    margin-left: 7em;
+    margin-top: 5em;
 }
