@@ -60,7 +60,7 @@ li {
     color: var(--green);
 }
 
-.link:hover, .link:active {
+.link:hover {
     color: var(--yellow);
 }
 
