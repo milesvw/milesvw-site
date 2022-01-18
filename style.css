@@ -24,8 +24,18 @@ body {
 }
 
 .title {
-    font-size: 4em;
+    font-size: 5em;
     text-align: center;
+    color: var(--orange);
+}
+
+.subtitle {
+    font-size: 1.3em;
+    text-align: center;
+    color: var(--green)
+}
+
+.contact-title {
     color: var(--orange);
 }
 
