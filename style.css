@@ -1,87 +1,91 @@
+/* idk what color scheme to use 
+
 :root {
-    --black: #272727;
-    --grey: #747474;
-    --darkgrey: #3f3d3d;
-    --orange: #FF652F;
-    --yellow: #FFE400;
-    --green: #14A76C;
+    --color1: #FFFFFF;
+    --color2: #282828;
+    --color3: #0C0032;
+    --color4: #190061;
+    --color5: #240090;
+    --color6: #3500D3;
+} */
+
+/* :root {
+    --color1: #FFFFFF;
+    --color2: #1A1A1D;
+    --color3: #4E4E50;
+    --color4: #6F2232;
+    --color5: #950740;
+    --color6: #C3073F;
+} */
+
+:root {
+    --color1: #C5C6C7;
+    --color2: #0B0C10;
+    --color3: #1F2833;
+    --color4: #45A29E;
+    --color5: #66FCF1;
 }
 
 body {
     font-family: 'Montserrat', sans-serif;
-    background: var(--black);
-    color: var(--grey);
+    background: var(--color2);
+    color: var(--color1);
     margin: 0;
 }
-
-.navbar {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    background: var(--darkgrey);
+header {
+    text-align: center;
+}
+.welcome {
+    margin-top: 3em;
+    font-size: 1.5em;
+}
+.welcome:hover {
+    color: var(--color5);
+    transition: all 0.3s ease 0s;
+}
+h1 {
+    color: var(--color5);
+    font-size: 5em;
+    padding-top: 0;
+    margin-top: 0.3em;
+    margin-bottom: 0.5em;
+}
+.subtitle {
+    margin-bottom: 2.7em;
+}
+h2 {
+    color: var(--color4);
+    text-align: center;
+}
+.tech ul li img {
+    height: 20px;
+    width: auto;
+}
+.table-item {
+    border: 1px solid var(--color5);
+    border-radius: 10px;
+    margin: 0.5em;
+    padding: 1em;
+    transition: transform 200ms;
+}
+a {
+    color: var(--color5);
+    transition: color 300ms;
+}
+a:hover {
+    color: var(--color4);
+}
+.contact {
     display: flex;
     justify-content: center;
 }
-
-.title {
-    font-size: 5em;
-    text-align: center;
-    color: var(--orange);
-}
-
-.subtitle {
-    font-size: 1.3em;
-    text-align: center;
-    color: var(--green)
-}
-
-.contact-title {
-    color: var(--orange);
-}
-
-.nav-item {
-    text-decoration: none;
-    color: var(--yellow);
-}
-
-.nav-item:hover {
-    color: var(--orange);
-}
-
-li {
-    margin: 0.5em 2vw;
-    padding: 0.2em;
-    font-size: 1.4em;
-}
-
-.contact {
-    margin-left: 7em;
-    margin-top: 5em;
-}
-
-.disclaimer {
-    text-align: center;
-    width: 100%;
-    position: absolute;
-    bottom: 1em;
-}
-
-.link {
-    color: var(--green);
-}
-
-.link:hover {
-    color: var(--yellow);
-}
-
-@media (max-width: 870px) {
-    .contact {
-        margin-left: 1em;
+@media (min-width: 1045px) {
+    .tech {
+        display: flex;
+        justify-content: center;
+        width: 100%;
     }
-}
-
-@media (max-width: 470px) {
-    .disclaimer {
-        bottom: 0;
+    .table-item:hover {
+        transform: translateY(-5px);
     }
 }
