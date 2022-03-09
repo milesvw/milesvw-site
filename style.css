@@ -58,12 +58,10 @@ h1 {
     margin-top: 0.3em;
     margin-bottom: 0.5em;
 }
-.subtitle {
-    margin-bottom: 2.7em;
-}
 h2 {
     color: var(--color4);
     text-align: center;
+    margin-bottom: 2.5em;
 }
 .tech ul li img {
     height: 20px;
