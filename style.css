@@ -34,6 +34,14 @@ body {
 }
 header {
     text-align: center;
+    font-family: 'Abril Fatface', sans-serif;
+    letter-spacing: 2px;
+}
+header h1 {
+    font-size: 72px;
+    background: -webkit-linear-gradient(#66fcf1, #ff08fc);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 .welcome {
     margin-top: 3em;
@@ -61,12 +69,12 @@ h2 {
     height: 20px;
     width: auto;
 }
-.table-item {
+.box {
     border: 1px solid var(--color5);
     border-radius: 10px;
+    transition: transform 200ms;
     margin: 0.5em;
     padding: 1em;
-    transition: transform 200ms;
 }
 a {
     color: var(--color5);
@@ -75,17 +83,23 @@ a {
 a:hover {
     color: var(--color4);
 }
-.contact {
-    display: flex;
-    justify-content: center;
-}
-@media (min-width: 1045px) {
+@media (min-width: 760px) {
+    .box {
+	    width: 20em;
+    }
+    .box:hover {
+        transform: translateY(-5px);
+    }
     .tech {
         display: flex;
         justify-content: center;
         width: 100%;
     }
-    .table-item:hover {
-        transform: translateY(-5px);
+    #contact {
+        width: 30em;
+    }
+    .itwontfuckingcenter {
+        display: flex;
+        justify-content: center;
     }
 }
